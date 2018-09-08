@@ -44,9 +44,7 @@ namespace WpfApp2
 
         protected List<T> JsonConverter(string response)
         {
-            List<T> result;
-            result = JsonConvert.DeserializeObject<List<T>>(response);
-            return result; 
+            return JsonConvert.DeserializeObject<List<T>>(response); 
         }
     }
 }
